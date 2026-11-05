@@ -100,7 +100,7 @@ const Toggle = ({ options, value, onChange }) => (
 const CardHeader = ({ title, subtitle, children }) => (
   <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
     <div className="min-w-0">
-      <h2 className="text-[15px] font-bold text-slate-800 font-bold">{title}</h2>
+      <h2 className="text-[15px] font-black text-slate-800 ">{title}</h2>
       <p className="mt-1 text-[11px] text-slate-500">{subtitle}</p>
     </div>
     <div className="flex shrink-0 flex-wrap items-center gap-3">{children}</div>

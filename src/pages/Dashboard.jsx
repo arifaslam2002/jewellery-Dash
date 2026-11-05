@@ -25,9 +25,9 @@ const Dashboard = () => {
           </div>
 
           <div className="flex items-stretch gap-2 sm:gap-3">
-            <div className="flex min-w-0 flex-1 items-center gap-1.5 rounded-md bg-amber-500 p-1.5 text-xs font-black sm:flex-none sm:text-sm">
+            <div className="flex min-w-0 flex-1 items-center gap-1.5 rounded-md bg-[rgb(255,244,227)] p-1.5 text-xs font-black sm:flex-none sm:text-sm">
               <Globe size={15} className="shrink-0" />
-              <span className="truncate text-red-700">
+              <span className="truncate text-[rgb(193,136,92)]">
                 Today's Gold: ₹13,385/g
               </span>
             </div>
