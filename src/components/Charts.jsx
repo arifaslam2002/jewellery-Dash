@@ -11,7 +11,6 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-/* ---------- Data (replace with API data) ---------- */
 const goldData = {
   "7D": [
     { date: "Oct 30, 2026", rate: 13050 },
@@ -80,7 +79,6 @@ const COLORS = {
 
 const inr = (n) => `₹${Math.round(n).toLocaleString("en-IN")}`;
 
-/* ---------- Small shared pieces ---------- */
 const Toggle = ({ options, value, onChange }) => (
   <div className="inline-flex overflow-hidden rounded-md border border-slate-200 bg-white">
     {options.map((opt) => (
@@ -102,7 +100,7 @@ const Toggle = ({ options, value, onChange }) => (
 const CardHeader = ({ title, subtitle, children }) => (
   <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
     <div className="min-w-0">
-      <h2 className="text-[15px] font-bold text-slate-800">{title}</h2>
+      <h2 className="text-[15px] font-bold text-slate-800 font-bold">{title}</h2>
       <p className="mt-1 text-[11px] text-slate-500">{subtitle}</p>
     </div>
     <div className="flex shrink-0 flex-wrap items-center gap-3">{children}</div>
@@ -139,7 +137,6 @@ const tooltipStyle = {
   boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
 };
 
-/* ---------- Gold Rate Price Trend ---------- */
 const GoldRateChart = () => {
   const [range, setRange] = useState("7D");
   const data = goldData[range];
@@ -240,7 +237,6 @@ const GoldRateChart = () => {
   );
 };
 
-/* ---------- Customer Registrations ---------- */
 const RegistrationsChart = () => {
   const [range, setRange] = useState("6M");
   const data = registrationData[range];
@@ -352,8 +348,6 @@ const RegistrationsChart = () => {
     </div>
   );
 };
-
-/* ---------- Page section ---------- */
 const Charts = () => (
   <div className="mt-4 grid grid-cols-1 gap-4 sm:mt-6 sm:gap-5 xl:grid-cols-2">
     <GoldRateChart />

@@ -13,7 +13,6 @@ import Charts from "../components/Charts";
 const Dashboard = () => {
   return (
     <div className="min-w-0">
-      {/* Page header */}
       <div className="mb-4 rounded-md border border-slate-200 bg-white p-3 sm:mb-6 sm:p-3.5">
         <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <div className="min-w-0">
@@ -41,8 +40,6 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-
-      {/* Cards */}
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 xl:grid-cols-4">
         <StatCard
           icon={<Wallet size={15} />}
