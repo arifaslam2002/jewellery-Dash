@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-gold: #d98324;
+  --color-gold-soft: #fdf3e4;
+  --color-ink: #111827;
+  --color-line: #e8eaee;
+  --color-page: #f5f6f8;
+}
+
+body {
+  @apply bg-page font-sans text-ink antialiased;
+  margin: 0;
+}
